@@ -1,0 +1,15 @@
+[user]
+	name = Yuka Kato
+	email = y-kato@esm.co.jp
+[alias]
+	co = checkout
+  ci = commit
+  st = status
+  f = fetch
+  l = log --oneline --decorate --graph
+[core]
+	editor = s -w
+[color]
+  ui = true
+[log]
+  date = iso
