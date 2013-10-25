@@ -28,3 +28,8 @@ PROMPT2='[%n]> '
 
 ## もしかして時のプロンプト指定
 SPROMPT="%{$fg[red]%}%{$suggest%}%B(?_?%) <%b もしかして %B%r%b %{$fg[red]%} ? [そう!(y), 違う!(n),a,e]:${reset_color} "
+
+# Execute SublimeText3 with s command
+export PATH=~/bin:$PATH
+export EDITOR='s -w'
+
