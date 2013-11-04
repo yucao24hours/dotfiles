@@ -5,10 +5,12 @@
 	co = checkout
   ci = commit
   st = status
+  br = branch
   f = fetch
   l = log --oneline --decorate --graph
 [core]
 	editor = s -w
+	excludesfile = /Users/yucao24hours/.gitignore
 [color]
   ui = true
 [log]
