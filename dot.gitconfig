@@ -1,16 +1,16 @@
 [user]
-	name = Yuka Kato
-	email = y-kato@esm.co.jp
+  name = Yuka Kato
+  email = y-kato@esm.co.jp
 [alias]
-	co = checkout
+  co = checkout
   ci = commit
   st = status
   br = branch
   f = fetch
   l = log --oneline --decorate --graph
 [core]
-	editor = s -w
-	excludesfile = /Users/yucao24hours/.gitignore
+  editor = s -w
+  excludesfile = /Users/yucao24hours/.gitignore
 [color]
   ui = true
 [log]
