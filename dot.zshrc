@@ -6,6 +6,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # Alias
 alias g=git
 alias be='bundle exec'
+alias ll='ls -la'
 
 # Execute SublimeText3 with s command
 export PATH=~/bin:$PATH
