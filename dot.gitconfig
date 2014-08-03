@@ -8,10 +8,16 @@
   br = branch
   f = fetch
   l = log --oneline --decorate --graph
+  g = grep
+  df = diff
+  p = pull
+  pr = pull --rebase
+  ad = add
 [core]
-  editor = s -w
   excludesfile = /Users/yucao24hours/.gitignore
 [color]
   ui = true
 [log]
   date = iso
+[push]
+	default = simple
