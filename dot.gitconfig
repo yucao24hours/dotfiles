@@ -2,6 +2,7 @@
   name = Yuka Kato
   email = y-kato@esm.co.jp
 [alias]
+  cb = checkout -b
   co = checkout
   ci = commit
   st = status
