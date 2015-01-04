@@ -11,7 +11,6 @@ alias cl='clear'
 
 # Execute SublimeText3 with s command
 export PATH=~/bin:$PATH
-export EDITOR='s -w'
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
