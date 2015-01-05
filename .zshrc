@@ -1,3 +1,5 @@
+$(boot2docker shellinit)
+
 export PATH="/usr/local/bin:$PATH"
 
 # Added by the Heroku Toolbelt
