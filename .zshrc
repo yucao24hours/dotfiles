@@ -1,4 +1,4 @@
-$(boot2docker shellinit)
+#$(boot2docker shellinit)
 
 export PATH="/usr/local/bin:$PATH"
 
@@ -11,6 +11,10 @@ alias be='bundle exec'
 alias ll='ls -la'
 alias cl='clear'
 alias bi='bundle install'
+
+# 2015/02/05 Add aliases for working projects of Sansan.
+alias ew='cd ~/src/sansan/eight_gees_eight_works'
+alias en='cd ~/src/sansan/eight_gees_entry'
 
 # Execute SublimeText3 with s command
 export PATH=~/bin:$PATH
