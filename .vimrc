@@ -37,6 +37,9 @@ Plugin 'plasticboy/vim-markdown'
 "" Highlight configuration for YAML Frontmatter
 let g:vim_markdown_frontmatter=1
 
+" for opening file specify line
+Plugin 'bogado/file-line'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
