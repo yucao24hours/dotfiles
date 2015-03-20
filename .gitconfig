@@ -22,3 +22,5 @@
   date = iso
 [push]
 	default = simple
+[fetch]
+  prune = true
