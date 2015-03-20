@@ -11,6 +11,8 @@ alias be='bundle exec'
 alias ll='ls -la'
 alias cl='clear'
 alias bi='bundle install'
+alias blog='cd ~/work/blog/jekyll-incorporated/'
+alias kaja='cd ~/work/yochiyochi/kajaeru/'
 
 # 2015/02/05 Add aliases for working projects of Sansan.
 alias ew='cd ~/src/sansan/eight_gees_eight_works'
@@ -106,3 +108,6 @@ export EDITOR='vim'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Execute Tmux
+tmux
