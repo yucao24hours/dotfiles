@@ -38,6 +38,7 @@ Plugin 'tpope/vim-endwise'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'lambdatoast/elm.vim'
 
 " syntastic
 let g:syntastic_check_on_open=1
