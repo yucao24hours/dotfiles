@@ -109,5 +109,4 @@ export EDITOR='vim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Execute Tmux
-tmux
+export EMOJI_SPEC=3
