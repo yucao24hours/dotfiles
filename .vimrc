@@ -40,6 +40,9 @@ Plugin 'tpope/vim-rails'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'lambdatoast/elm.vim'
 
+" Align
+Plugin 'h1mesuke/vim-alignta'
+
 " syntastic
 let g:syntastic_check_on_open=1
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
@@ -95,7 +98,7 @@ set smartcase "検索文字列に大文字が含まれている場合は区別�
 set wrapscan "検索時に最後まで行ったら最初に戻る
 
 "クリップボード設定
-set clipboard=unnamed,autoselect
+set clipboard=unnamedplus,autoselect
 
 set expandtab tabstop=2 shiftwidth=2
 
