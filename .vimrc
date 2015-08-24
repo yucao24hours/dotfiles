@@ -40,6 +40,9 @@ Plugin 'tpope/vim-rails'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'lambdatoast/elm.vim'
 
+" NERDTree
+Plugin 'scrooloose/nerdtree'
+
 " Align
 Plugin 'h1mesuke/vim-alignta'
 
