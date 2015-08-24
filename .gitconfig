@@ -26,3 +26,5 @@
   prune = true
 [ghq]
   root = ~
+[merge]
+  tool = vimdiff
