@@ -149,3 +149,5 @@ nnoremap [unite]xm :<C-u>Unite rails/model<CR>
 nnoremap [unite]xs :<C-u>Unite rails/spec<CR>
 nnoremap [unite]xc :<C-u>Unite rails/controller<CR>
 nnoremap [unite]xv :<C-u>Unite rails/view<CR>
+
+autocmd QuickFixCmdPost *grep* cwindow
