@@ -39,6 +39,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'lambdatoast/elm.vim'
+Plugin 'tpope/vim-cucumber'
 
 " NERDTree
 Plugin 'scrooloose/nerdtree'
