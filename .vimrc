@@ -70,6 +70,9 @@ Plugin 'basyura/unite-rails'
 " vim-airline
 Plugin 'bling/vim-airline'
 
+" vim-slim
+Plugin 'slim-template/vim-slim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
