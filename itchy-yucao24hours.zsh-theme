@@ -1,7 +1,7 @@
 # Inspired by http://peepcode.com/blog/2012/my-command-line-prompt
 # Usage: Copy this file to ~/.oh-my-zsh/themes/
 
-local smiley="%(?,%{$fg[green]%}☺%{$reset_color%},%{$fg[red]%}☹%{$reset_color%})"
+local smiley="%(?,%{$fg[green]%}😉%{$reset_color%},%{$fg[red]%}👿%{$reset_color%})"
 
 local user="%{$fg[cyan]%}%n%{$reset_color%}"
 local host="%{$fg[cyan]%}@%m%{$reset_color%}"
