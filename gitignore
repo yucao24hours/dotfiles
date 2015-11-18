@@ -1,0 +1,9 @@
+# Ignore backup files
+*.swp
+*~
+.DS_Store
+
+.ruby-version
+
+# Ignore ctags
+/tags
