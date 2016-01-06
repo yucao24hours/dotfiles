@@ -68,6 +68,8 @@ let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 
+let g:vim_markdown_folding_disabled=1
+
 " Highlight configuration for YAML Frontmatter
 let g:vim_markdown_frontmatter=1
 
