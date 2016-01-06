@@ -155,3 +155,4 @@ nnoremap [unite]xc :<C-u>Unite rails/controller<CR>
 nnoremap [unite]xv :<C-u>Unite rails/view<CR>
 
 autocmd QuickFixCmdPost *grep* cwindow
+autocmd BufRead,BufNewFile *.md set filetype=markdown
