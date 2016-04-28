@@ -91,6 +91,9 @@ Plugin 'slim-template/vim-slim'
 " syntax-highlighting for Golang
 Plugin 'fatih/vim-go'
 
+" auto-indent for Haskell
+Plugin 'itchyny/vim-haskell-indent'
+
 "#####表示設定#####
 set number "行番号を表示する
 set title "編集中のファイル名を表示
