@@ -88,6 +88,9 @@ Plugin 'bling/vim-airline'
 " vim-slim
 Plugin 'slim-template/vim-slim'
 
+" syntax-highlighting for Golang
+Plugin 'fatih/vim-go'
+
 "#####表示設定#####
 set number "行番号を表示する
 set title "編集中のファイル名を表示

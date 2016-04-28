@@ -110,3 +110,6 @@ export EDITOR='vim'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export EMOJI_SPEC=3
+
+# Setting for Golang
+export GOPATH=$HOME/work
