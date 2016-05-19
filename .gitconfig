@@ -14,6 +14,7 @@
   p = pull
   pr = pull --rebase
   ad = add
+  ri = rebase -i origin/master
 [core]
   excludesfile = /Users/yucao24hours/.gitignore
 [color]
