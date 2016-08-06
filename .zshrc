@@ -7,7 +7,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 # Alias
 alias g=git
-alias be='bundle exec'
+alias br='bin/rails'
 alias ll='ls -la'
 alias bi='bundle install'
 alias blog='cd ~/work/blog/jekyll-incorporated/'
