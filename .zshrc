@@ -26,6 +26,14 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 export RBENV_ROOT=/usr/local/rbenv
 eval "$(rbenv init -)"
 
+# pyenv
+
+if type pyenv >/dev/null 2>&1; then
+  export PYENV_ROOT="$HOME/.pyenv"
+  export PATH="$PYENV_ROOT/bin:$PATH"
+  eval "$(pyenv init -)"
+fi
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
