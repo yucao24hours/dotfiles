@@ -14,13 +14,6 @@ alias blog='cd ~/work/blog/jekyll-incorporated/'
 alias kaja='cd ~/work/yochiyochi/kajaeru/'
 alias cu='bin/cucumber'
 
-# 2015/02/05 Add aliases for working projects of Sansan.
-alias ew='cd ~/src/sansan/eight_gees_eight_works'
-alias en='cd ~/src/sansan/eight_gees_entry'
-
-# Execute SublimeText3 with s command
-export PATH=~/bin:$PATH
-
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 export RBENV_ROOT=/usr/local/rbenv
