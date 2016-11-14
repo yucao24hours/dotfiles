@@ -27,6 +27,16 @@ if type pyenv >/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 
+# Path to your oh-my-zsh installation.
+export ZSH=$HOME/.oh-my-zsh
+
+# Set name of the theme to load.
+# Look in ~/.oh-my-zsh/themes/
+# Optionally, if you set this to "random", it'll load a random theme each
+# time that oh-my-zsh is loaded.
+# スマイリーが入っててかわいいのは itchy 。ただし rvm 使ってるのでテンプレート自体を修正する必要がある。
+ZSH_THEME="itchy-yucao24hours"
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -61,12 +71,18 @@ fi
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(rails ruby vim git)
+
 # User configuration
 
 export PATH=$HOME/bin:/usr/local/bin:$HOME/.cabal/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
-source ~/.zsh-super-itchy.sh
+source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 export LANG=ja_JP.UTF-8
@@ -84,6 +100,15 @@ export EDITOR='vim'
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export EMOJI_SPEC=3
 
