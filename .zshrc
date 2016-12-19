@@ -121,3 +121,7 @@ export LANG=en_US.UTF-8
 
 # Setting for RabbitMQ execution
 export PATH=$PATH:/usr/local/sbin
+
+# Setting for Elixir
+export PATH=$PATH:/usr/local/Cellar/elixir/1.3.4/bin
+# そろそろツール/プログラムごとに file を分けたくなってきた
