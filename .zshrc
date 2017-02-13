@@ -1,5 +1,3 @@
-#$(boot2docker shellinit)
-
 export PATH="/usr/local/bin:$PATH"
 
 # Added by the Heroku Toolbelt
@@ -30,7 +28,6 @@ fi
 # User configuration
 
 export PATH=$HOME/bin:/usr/local/bin:$HOME/.cabal/bin:$PATH
-# export MANPATH="/usr/local/man:$MANPATH"
 
 source "${HOME}/.zsh/themes/super-itchy.zsh"
 
