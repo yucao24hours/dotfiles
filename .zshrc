@@ -546,3 +546,5 @@ select-word-style bash
 
 bindkey -d
 bindkey -e
+
+export PATH=$HOME/.nodebrew/current/bin:$PATH
