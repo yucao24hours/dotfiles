@@ -29,22 +29,7 @@ fi
 
 export PATH=$HOME/bin:/usr/local/bin:$HOME/.cabal/bin:$PATH
 
-source "${HOME}/.zsh/themes/super-itchy.zsh"
-
-function toggle-rprompt() {
-  if [ -z "${HIDE_RPROMPT}" ]; then
-    unset RPROMPT
-    export HIDE_RPROMPT=true
-    zle reset-prompt
-  else
-    source "${HOME}/.zsh/themes/super-itchy.zsh"
-    unset HIDE_RPROMPT
-    zle accept-line
-  fi
-}
-autoload -U toggle-rprompt
-zle -N toggle-rprompt
-bindkey '^[r' toggle-rprompt
+source "${HOME}/dotfiles/super-itchy.zsh"
 
 # You may need to manually set your language environment
 export LANG=ja_JP.UTF-8
