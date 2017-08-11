@@ -548,3 +548,6 @@ bindkey -d
 bindkey -e
 
 export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+# added by travis gem
+[ -f /Users/yucao24hours/.travis/travis.sh ] && source /Users/yucao24hours/.travis/travis.sh
