@@ -14,7 +14,6 @@ alias cu='bin/cucumber'
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
-export RBENV_ROOT=/usr/local/rbenv
 eval "$(rbenv init -)"
 
 # pyenv
