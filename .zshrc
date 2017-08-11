@@ -552,3 +552,9 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 # added by travis gem
 [ -f /Users/yucao24hours/.travis/travis.sh ] && source /Users/yucao24hours/.travis/travis.sh
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/yucao24hours/work/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/yucao24hours/work/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/yucao24hours/work/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/yucao24hours/work/google-cloud-sdk/completion.zsh.inc'; fi
