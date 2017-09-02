@@ -16,6 +16,10 @@ alias cu='bin/cucumber'
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+# rubygems
+export GEM_HOME=~/.gem
+export GEM_PATH=~/.gem
+
 # pyenv
 
 if type pyenv >/dev/null 2>&1; then
