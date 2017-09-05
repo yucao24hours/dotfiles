@@ -27,3 +27,6 @@
   prune = true
 [merge]
   tool = vimdiff
+[ghq]
+	root = ~/.ghq
+	root = ~/.go/src
