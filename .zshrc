@@ -32,7 +32,7 @@ fi
 
 export PATH=$HOME/bin:/usr/local/bin:$HOME/.cabal/bin:$PATH
 
-source "${HOME}/dotfiles/super-itchy.zsh"
+source "${HOME}/.dotfiles/super-itchy.zsh"
 
 # You may need to manually set your language environment
 export LANG=ja_JP.UTF-8
