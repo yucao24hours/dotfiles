@@ -1,32 +1,32 @@
 [user]
-  name = Yuka Kato
-  email = satoimo.to.imo@gmail.com
+	name = Yuka Kato
+	email = satoimo.to.imo@gmail.com
 [alias]
-  cb = checkout -b
-  co = checkout
-  ci = commit
-  st = status
-  br = branch
-  f = fetch
-  l = log --oneline --decorate --graph
-  g = grep
-  df = diff
-  p = pull
-  pr = pull --rebase
-  ad = add
-  ri = rebase -i origin/master
+	cb = checkout -b
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	f = fetch
+	l = log --oneline --decorate --graph
+	g = grep
+	df = diff
+	p = pull
+	pr = pull --rebase
+	ad = add
+	ri = rebase -i origin/master
 [core]
-  excludesfile = /Users/yucao24hours/.gitignore
+	excludesfile = /Users/yucao24hours/.gitignore
 [color]
-  ui = true
+	ui = true
 [log]
-  date = iso
+	date = iso
 [push]
 	default = simple
 [fetch]
-  prune = true
+	prune = true
 [merge]
-  tool = vimdiff
+	tool = vimdiff
 [ghq]
 	root = ~/.ghq
 	root = ~/.go/src
