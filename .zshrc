@@ -26,6 +26,15 @@ fi
 
 # User configuration
 
+# コマンド履歴の保存先。
+HISTFILE="${HOME}/.zsh_history"
+
+# メモリに保存される履歴の件数。(保存数だけ履歴を検索できる)
+HISTSIZE=1000000
+
+# HISTFILE で指定したファイルに保存される履歴の件数。
+SAVEHIST=1000000
+
 export PATH=$HOME/bin:/usr/local/bin:$HOME/.cabal/bin:$PATH
 
 source "${HOME}/.dotfiles/super-itchy.zsh"
