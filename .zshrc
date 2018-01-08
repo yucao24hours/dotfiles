@@ -1,3 +1,4 @@
+export PATH="${HOME}/.local/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 
 # Added by the Heroku Toolbelt
