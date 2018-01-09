@@ -55,6 +55,10 @@ export PATH=$PATH:/usr/local/sbin
 
 # Setting for Elixir
 export PATH=$PATH:/usr/local/Cellar/elixir/1.3.4/bin
+
+# for zsh-completions
+fpath=(/usr/local/share/zsh-completions $fpath)
+
 # そろそろツール/プログラムごとに file を分けたくなってきた
 
 # ==============================================================================
