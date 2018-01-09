@@ -31,8 +31,6 @@ HISTSIZE=1000000
 # HISTFILE で指定したファイルに保存される履歴の件数。
 SAVEHIST=1000000
 
-export PATH=$HOME/bin:/usr/local/bin:$HOME/.cabal/bin:$PATH
-
 source "${HOME}/.dotfiles/super-itchy.zsh"
 
 # You may need to manually set your language environment
