@@ -1,24 +1,36 @@
-export PATH="${HOME}/.local/bin:$PATH"
-export PATH="/usr/local/bin:$PATH"
-
-# Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
 # Alias
 alias g=git
 alias bi='bundle install'
 
+# Paths
+
+export PATH="$PATH:${HOME}/.local/bin"
+
+# Added by the Heroku Toolbelt
+export PATH="$PATH:/usr/local/heroku/bin"
+
 # rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$PATH:$HOME/.rbenv/bin"
 eval "$(rbenv init -)"
 
 # pyenv
 
 if type pyenv >/dev/null 2>&1; then
   export PYENV_ROOT="$HOME/.pyenv"
-  export PATH="$PYENV_ROOT/bin:$PATH"
+  export PATH="$PATH:$PYENV_ROOT/bin"
   eval "$(pyenv init -)"
 fi
+
+# Setting for Golang
+export GOPATH=$HOME/.go
+export PATH=$PATH:$GOPATH/bin
+
+# Setting for Elixir
+export PATH=$PATH:/usr/local/Cellar/elixir/1.3.4/bin
+
+export PATH=$PATH:/usr/local/sbin
+export PATH=$PATH:/usr/local/bin
+export PATH=$PATH:$HOME/.nodebrew/current/bin
 
 # User configuration
 
@@ -40,19 +52,10 @@ export EDITOR='vim'
 
 export EMOJI_SPEC=3
 
-# Setting for Golang
-export GOPATH=$HOME/.go
-export PATH=$PATH:$GOPATH/bin
 
 # https://coderwall.com/p/-k_93g/mac-os-x-valueerror-unknown-locale-utf-8-in-python
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
-
-# Setting for RabbitMQ execution
-export PATH=$PATH:/usr/local/sbin
-
-# Setting for Elixir
-export PATH=$PATH:/usr/local/Cellar/elixir/1.3.4/bin
 
 # for zsh-completions
 fpath=(/usr/local/share/zsh-completions $fpath)
@@ -538,8 +541,6 @@ select-word-style bash
 
 bindkey -d
 bindkey -e
-
-export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 # added by travis gem
 [ -f /Users/yucao24hours/.travis/travis.sh ] && source /Users/yucao24hours/.travis/travis.sh
