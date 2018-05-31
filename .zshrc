@@ -30,7 +30,6 @@ export PATH=$PATH:/usr/local/Cellar/elixir/1.3.4/bin
 
 export PATH=$PATH:/usr/local/sbin
 export PATH=$PATH:/usr/local/bin
-export PATH=$PATH:$HOME/.nodebrew/current/bin
 
 # User configuration
 
@@ -550,3 +549,7 @@ if [ -f '/Users/yucao24hours/work/google-cloud-sdk/path.zsh.inc' ]; then source 
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/yucao24hours/work/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/yucao24hours/work/google-cloud-sdk/completion.zsh.inc'; fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
