@@ -1,3 +1,5 @@
+source ~/.bash-powerline.sh
+
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
