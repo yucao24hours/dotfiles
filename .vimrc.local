@@ -1,1 +1,3 @@
 command! PrettyJsonViaJq :execute "%!jq '.'"
+
+colorscheme dracula
