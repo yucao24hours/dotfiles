@@ -1,12 +1,13 @@
 source ~/.bash-powerline.sh
 
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
 # Paths
 export PATH="$PATH:${HOME}/.local/bin"
 export PATH=$PATH:/usr/local/sbin
 export PATH=$PATH:/usr/local/bin
+
+## for rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 
 # Alias
 alias g=git
