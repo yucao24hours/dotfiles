@@ -1,6 +1,7 @@
 # Alias
 alias g=git
 alias bi='bundle install'
+alias ds='docker-compose'
 
 # Paths
 
