@@ -1,3 +1,8 @@
 command! PrettyJsonViaJq :execute "%!jq '.'"
 
 colorscheme dracula
+
+" カーソルがある位置をハイライト
+set cursorline
+" カーソルがある行をバーで強調表示する
+hi CursorLine term=bold cterm=bold guibg=Grey42
