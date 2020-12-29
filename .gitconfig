@@ -1,6 +1,6 @@
 [user]
 	name = Yuka Kato
-	email = satoimo.to.imo@gmail.com
+	email = yucao24hours@gmail.com
 [alias]
 	cb = checkout -b
 	co = checkout
@@ -27,6 +27,3 @@
 	prune = true
 [merge]
 	tool = vimdiff
-[ghq]
-	root = ~/.ghq
-	root = ~/.go/src
