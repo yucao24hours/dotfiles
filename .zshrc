@@ -4,23 +4,10 @@ alias bi='bundle install'
 alias ds='docker-compose'
 
 # Paths
-
 export PATH="$PATH:${HOME}/.local/bin"
 
 # Added by the Heroku Toolbelt
 export PATH="$PATH:/usr/local/heroku/bin"
-
-# rbenv
-export PATH="$PATH:$HOME/.rbenv/bin"
-eval "$(rbenv init -)"
-
-# pyenv
-
-if type pyenv >/dev/null 2>&1; then
-  export PYENV_ROOT="$HOME/.pyenv"
-  export PATH="$PATH:$PYENV_ROOT/bin"
-  eval "$(pyenv init -)"
-fi
 
 # Setting for Golang
 export GOPATH=$HOME/.go
@@ -550,7 +537,3 @@ if [ -f '/Users/yucao24hours/work/google-cloud-sdk/path.zsh.inc' ]; then source 
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/yucao24hours/work/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/yucao24hours/work/google-cloud-sdk/completion.zsh.inc'; fi
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
