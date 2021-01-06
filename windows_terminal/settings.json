@@ -29,7 +29,7 @@
         {
             // Put settings here that you want to apply to all profiles.
             "colorScheme": "Dracula",
-            "fontSize": 9,
+            "fontSize": 12,
             "fontFace": "Ricty Diminished"
         },
         "list":
@@ -65,8 +65,7 @@
 
     // Add custom color schemes to this array.
     // To learn more about color schemes, visit https://aka.ms/terminal-color-schemes
-    "schemes":
-    [
+    "schemes": [
         {
             "name": "Dracula",
             "cursorColor": "#F8F8F2",
