@@ -26,3 +26,5 @@
 	prune = true
 [merge]
 	tool = vimdiff
+[credential "https://github.com"]
+	helper = !gh auth git-credential
