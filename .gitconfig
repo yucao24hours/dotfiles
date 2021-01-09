@@ -5,16 +5,15 @@
 	cb = checkout -b
 	co = checkout
 	ci = commit
+	ame = commit --amend
 	st = status
 	br = branch
 	f = fetch
-	l = log --oneline --decorate --graph
-	g = grep
 	df = diff
-	p = pull
+	pl = pull
+	ps = push
 	pr = pull --rebase
 	ad = add
-	ri = rebase -i origin/master
 [core]
 	excludesfile = /Users/yucao24hours/.gitignore
 [color]
