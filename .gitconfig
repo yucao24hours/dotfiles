@@ -13,7 +13,6 @@
 	pl = pull
 	plr = pull --rebase
 	ps = push
-	pr = pull --rebase
 	ad = add
 [core]
 	excludesfile = /Users/yucao24hours/.gitignore
