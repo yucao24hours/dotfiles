@@ -11,6 +11,7 @@
 	f = fetch
 	df = diff
 	pl = pull
+	plr = pull --rebase
 	ps = push
 	pr = pull --rebase
 	ad = add
