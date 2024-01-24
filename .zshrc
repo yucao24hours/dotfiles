@@ -63,3 +63,17 @@ if [ -f '/Users/yucao24hours/work/google-cloud-sdk/path.zsh.inc' ]; then source 
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/yucao24hours/work/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/yucao24hours/work/google-cloud-sdk/completion.zsh.inc'; fi
+
+# for Prezto
+source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+
+# コマンド修正提案をオフに
+unsetopt correct_all
+
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+
+# For Android Studio
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export PLATFORM_TOOLS_PATH="$ANDROID_HOME/platform-tools"
+export PATH="$ANDROID_HOME/bin:$PLATFORM_TOOLS_PATH:$PATH"
