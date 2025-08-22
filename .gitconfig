@@ -2,8 +2,10 @@
 	name = Yuka Kato
 	email = yucao24hours@gmail.com
 [alias]
-	cb = checkout -b
-	co = checkout
+	s = switch
+	sc = switch --create # equivalent to checkout -b
+	r = restore # equivalent to checkout
+	rs = restore --staged # equivalent to reset HEAD <file>
 	ci = commit
 	ame = commit --amend
 	st = status
