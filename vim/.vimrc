@@ -33,6 +33,7 @@ set number
 set shiftwidth=2
 set tabstop=2
 set title
+set shortmess-=S
 
 " fzf の設定
 let mapleader = ","
