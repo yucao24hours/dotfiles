@@ -3,11 +3,10 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-rails'
 Plug 'slim-template/vim-slim'
 
-Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'arcticicestudio/nord-vim'
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'github/copilot.vim'
 Plug 'airblade/vim-gitgutter'
@@ -19,9 +18,7 @@ Plug 'preservim/nerdtree'
 call plug#end()
 
 set termguicolors
-set background=dark
-
-colorscheme dracula
+colorscheme nord
 
 syntax on
 filetype plugin indent on
