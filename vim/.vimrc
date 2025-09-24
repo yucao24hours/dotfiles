@@ -10,6 +10,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'github/copilot.vim'
 Plug 'airblade/vim-gitgutter'
+Plug 'junegunn/vim-easy-align'
 
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'tpope/vim-surround'
@@ -63,3 +64,9 @@ let NERDTreeShowHidden=1
 " vim-gitgutter の設定
 set signcolumn=yes
 set updatetime=100
+
+" easy-align の設定
+" ビジュアルモードで ga を押すと起動
+xmap ga <Plug>(EasyAlign)
+" ノーマルモードで ga を押すと起動
+nmap ga <Plug>(EasyAlign)
