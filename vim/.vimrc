@@ -12,6 +12,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'github/copilot.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/vim-easy-align'
+Plug 'preservim/vim-markdown'
 
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'tpope/vim-surround'
@@ -79,3 +80,7 @@ nmap <silent><nowait> gd <Plug>(coc-definition)
 nmap <silent><nowait> gy <Plug>(coc-type-definition)
 nmap <silent><nowait> gi <Plug>(coc-implementation)
 nmap <silent><nowait> gr <Plug>(coc-references)
+
+" vim-markdown の設定
+" YAML front matter をサポート
+let g:vim_markdown_frontmatter = 1
