@@ -1,6 +1,7 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-rails'
+Plug 'vim-ruby/vim-ruby'
 Plug 'slim-template/vim-slim'
 
 Plug 'arcticicestudio/nord-vim'
