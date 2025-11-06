@@ -4,33 +4,34 @@
 
 1. リポジトリを clone
 
-2. 必要なファイル／ディレクトリをシンボリックリンク
+2. Homebrew をインストール
+
+3. zprezto をインストール
+
+4. 必要なファイル／ディレクトリをシンボリックリンク
 
    * Vim
    ```
-   ln -s ~/w/dotfiles/vim/.vimrc ~/.vimrc
-   ln -s ~/w/dotfiles/vim/ftdetect ~/.vim/ftdetect
+   ln -s path/to/dotfiles/vim/.vimrc ~/.vimrc
+   mkdir -p ~/.vim/tmp # シンボリックリンクに必要なのは .vim だけど、tmp ディレクトリに swap ファイルを置く設定にしてあるのでこのタイミングで作る 
+   ln -s path/to/dotfiles/vim/ftdetect ~/.vim/ftdetect
    ```
 
    * Zsh
    ```
-   ln -s ~/w/dotfiles/zsh/.zshrc ~/.zshrc
+   ln -s path/to/dotfiles/zsh/.zshrc ~/.zshrc
    ```
 
    * Git
    ```
-   ln -s ~/w/dotfiles/git/.gitconfig ~/.gitconfig
+   ln -s path/to/dotfiles/git/.gitconfig ~/.gitconfig
    ```
 
-3. vim-plug をインストール
+5. vim-plug をインストール
 
-4. Vim を起動してプラグインをインストール
+6. Vim を起動してプラグインをインストール
 
-5. その他ツールをインストール
-   * Homebrew
-   * fzf
-   * zsh
-   * など、.vimrc や .zshrc に依存しているもの
+7. その他ツールをインストール
 
 ### Windows Terminal
 

@@ -77,3 +77,7 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 export ANDROID_HOME="$HOME/Library/Android/sdk"
 export PLATFORM_TOOLS_PATH="$ANDROID_HOME/platform-tools"
 export PATH="$ANDROID_HOME/bin:$PLATFORM_TOOLS_PATH:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
