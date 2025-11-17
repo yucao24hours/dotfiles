@@ -1,6 +1,6 @@
 [user]
 	name = Yuka Kato
-	email = yucao24hours@gmail.com
+	email = 1979779+yucao24hours@users.noreply.github.com
 [alias]
 	s = switch
 	sc = switch --create # equivalent to checkout -b
