@@ -17,7 +17,7 @@
 	ps = push
 	ad = add
 [core]
-	excludesfile = /Users/yucao24hours/.gitignore
+	excludesfile = ~/.gitignore
 [color]
 	ui = true
 [log]
