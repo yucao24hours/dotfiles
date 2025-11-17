@@ -71,3 +71,10 @@ set updatetime=100
 xmap ga <Plug>(EasyAlign)
 " ノーマルモードで ga を押すと起動
 nmap ga <Plug>(EasyAlign)
+
+" Coc
+" GoTo code navigation
+nmap <silent><nowait> gd <Plug>(coc-definition)
+nmap <silent><nowait> gy <Plug>(coc-type-definition)
+nmap <silent><nowait> gi <Plug>(coc-implementation)
+nmap <silent><nowait> gr <Plug>(coc-references)
