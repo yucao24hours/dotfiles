@@ -20,6 +20,7 @@
    * Zsh
    ```
    ln -s path/to/dotfiles/zsh/.zshrc ~/.zshrc
+   ln -s path/to/dotfiles/zsh/.zpreztorc ~/.zpreztorc
    ```
 
    * Git
