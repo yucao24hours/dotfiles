@@ -23,6 +23,20 @@
    ln -s path/to/dotfiles/zsh/.zpreztorc ~/.zpreztorc
    ```
 
+   * Starship (Nord テーマのプロンプト)
+   ```
+   brew install starship
+   mkdir -p ~/.config
+   ln -s path/to/dotfiles/starship/starship.toml ~/.config/starship.toml
+   ```
+
+   * Alacritty (Nord テーマ)
+   ```
+   mkdir -p ~/.config/alacritty/colors
+   ln -s path/to/dotfiles/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
+   ln -s path/to/dotfiles/alacritty/colors/nord.toml ~/.config/alacritty/colors/nord.toml
+   ```
+
    * Tmux
    ```
    ln -s path/to/dotfiles/.tmux.conf ~/.tmux.conf
