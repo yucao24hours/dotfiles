@@ -23,6 +23,13 @@
    ln -s path/to/dotfiles/zsh/.zpreztorc ~/.zpreztorc
    ```
 
+   * Tmux
+   ```
+   ln -s path/to/dotfiles/.tmux.conf ~/.tmux.conf
+   mkdir -p ~/.tmux/themes
+   git clone https://github.com/nordtheme/tmux.git ~/.tmux/themes/nord-tmux
+   ```
+
    * Git
    ```
    ln -s path/to/dotfiles/git/.gitconfig ~/.gitconfig
