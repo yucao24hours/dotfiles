@@ -84,3 +84,6 @@ nmap <silent><nowait> gr <Plug>(coc-references)
 " vim-markdown の設定
 " YAML front matter をサポート
 let g:vim_markdown_frontmatter = 1
+
+" クイックフィックス（不足しているインポートを追加など）
+nmap <leader>qf <Plug>(coc-fix-current)
