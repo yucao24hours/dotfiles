@@ -56,13 +56,7 @@ bindkey -d
 bindkey -e
 
 # added by travis gem
-[ -f /Users/yucao24hours/.travis/travis.sh ] && source /Users/yucao24hours/.travis/travis.sh
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/yucao24hours/work/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/yucao24hours/work/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/yucao24hours/work/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/yucao24hours/work/google-cloud-sdk/completion.zsh.inc'; fi
+[ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
 
 # for Prezto
 source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
@@ -82,6 +76,13 @@ export PATH="$ANDROID_HOME/bin:$PLATFORM_TOOLS_PATH:$PATH"
 # Starship prompt
 eval "$(starship init zsh)"
 
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/google-cloud-sdk/path.zsh.inc"; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/google-cloud-sdk/completion.zsh.inc"; fi
+eval "$(direnv hook zsh)"
+
 # for nodenv
-export PATH="$HOME/.nodenv/bin:$PATH"
 eval "$(nodenv init -)"
+export PATH="$HOME/.nodenv/bin:$PATH"
