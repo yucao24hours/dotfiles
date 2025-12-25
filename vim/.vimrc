@@ -84,6 +84,33 @@ nmap <silent><nowait> gy <Plug>(coc-type-definition)
 nmap <silent><nowait> gi <Plug>(coc-implementation)
 nmap <silent><nowait> gr <Plug>(coc-references)
 
+" ホバーでドキュメントを表示
+nnoremap <silent> K :call ShowDocumentation()<CR>
+
+function! ShowDocumentation()
+  if CocAction('hasProvider', 'hover')
+    call CocActionAsync('doHover')
+  else
+    call feedkeys('K', 'in')
+  endif
+endfunction
+
+" シンボルのリネーム
+nmap <leader>rn <Plug>(coc-rename)
+
+" オートコンプリートで Enter で確定
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
+
+" Tab で次の候補、Shift-Tab で前の候補
+inoremap <silent><expr> <TAB> coc#pum#visible() ? coc#pum#next(1) : "\<TAB>"
+inoremap <silent><expr> <S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<S-TAB>"
+
+" TypeScript/JavaScript ファイルの設定
+augroup TypeScriptSettings
+  autocmd!
+  autocmd FileType typescript,typescriptreact,javascript,javascriptreact setlocal shiftwidth=2 tabstop=2 expandtab
+augroup END
+
 " vim-markdown の設定
 " YAML front matter をサポート
 let g:vim_markdown_frontmatter = 1
