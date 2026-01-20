@@ -5,10 +5,10 @@
 ## Leader キー
 
 ```vim
-let mapleader = ","
+let mapleader = " "
 ```
 
-Leader キーは `,` (カンマ) に設定されています。
+Leader キーは `Space` (スペース) に設定されています。
 
 ---
 
@@ -17,9 +17,10 @@ Leader キーは `,` (カンマ) に設定されています。
 | キー | 機能 | 説明 |
 |------|------|------|
 | `Ctrl+p` | `:Files` | カレントディレクトリ配下のファイルをファジー検索 |
-| `,b` | `:Buffers` | 開いているバッファ一覧を表示 |
-| `,h` | `:History` | 最近開いたファイルの履歴を表示 |
-| `,g` | `:GFiles` | Git管理下のファイルをファジー検索 |
+| `Space b` | `:Buffers` | 開いているバッファ一覧を表示 |
+| `Space h` | `:History` | 最近開いたファイルの履歴を表示 |
+| `Space g` | `:GFiles` | Git管理下のファイルをファジー検索 |
+| `Space ur` | 最近開いたファイルを開く | 最後に開いたファイルを直接開く（履歴の1番目） |
 
 ---
 
@@ -60,8 +61,8 @@ let longer_name = 2
 
 | キー | 機能 | 説明 |
 |------|------|------|
-| `,rn` | シンボルのリネーム | 変数名・関数名を一括リネーム |
-| `,qf` | クイックフィックス | 不足しているimportの追加など、自動修正の提案を表示 |
+| `Space rn` | シンボルのリネーム | 変数名・関数名を一括リネーム |
+| `Space qf` | クイックフィックス | 不足しているimportの追加など、自動修正の提案を表示 |
 
 ### オートコンプリート
 
@@ -111,6 +112,15 @@ set signcolumn=yes   " 左端のサイン列を常に表示
 - **TypeScript/JavaScript**: インデント2スペース（自動設定）
 - **Markdown**: YAML front matter をサポート
 
+### 保存時の自動処理
+
+ファイル保存時（`:w`）に以下が自動的に実行されます：
+
+- **Prettier によるフォーマット** - TypeScript/JavaScript ファイル
+- **ESLint による自動修正** - import の並び替え、不要な import の削除など
+
+設定ファイル: `~/.vim/coc-settings.json`
+
 ---
 
 ## プラグイン一覧
@@ -138,5 +148,14 @@ set signcolumn=yes   " 左端のサイン列を常に表示
 インストールされている CoC 拡張：
 
 - **coc-tsserver** - TypeScript/JavaScript言語サーバー
+- **coc-eslint** - ESLint統合（保存時の自動修正を含む）
+
+### インストール方法
+
+Vim で以下のコマンドを実行：
+
+```vim
+:CocInstall coc-tsserver coc-eslint
+```
 
 詳細な設定は `~/.vim/coc-settings.json` を参照してください。

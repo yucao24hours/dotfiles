@@ -38,12 +38,26 @@ set title
 set shortmess-=S
 
 " fzf の設定
-let mapleader = ","
+let mapleader = " "
 
 nnoremap <C-p> :Files<CR>
 nnoremap <Leader>b :Buffers<CR>
 nnoremap <Leader>h :History<CR>
 nnoremap <Leader>g :GFiles<CR>
+
+" 最近開いたファイルを開く
+nnoremap <Leader>ur :call OpenRecentFile()<CR>
+
+function! OpenRecentFile()
+  " oldfiles から現在のディレクトリのファイルのみを抽出
+  let recent_files = filter(copy(v:oldfiles), 'filereadable(expand(v:val))')
+  if len(recent_files) == 0
+    echo "最近開いたファイルがありません"
+    return
+  endif
+  " 最初のファイル（最も最近開いたファイル）を開く
+  execute 'edit ' . fnameescape(recent_files[0])
+endfunction
 
 " NERDTree の設定
 " Vim 起動時に自動で NERDTree を開く
