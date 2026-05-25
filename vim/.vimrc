@@ -75,6 +75,9 @@ xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
 " Coc
+" 自動インストールする拡張機能
+let g:coc_global_extensions = ['coc-solargraph', 'coc-prettier']
+
 " GoTo code navigation
 nmap <silent><nowait> gd <Plug>(coc-definition)
 nmap <silent><nowait> gy <Plug>(coc-type-definition)

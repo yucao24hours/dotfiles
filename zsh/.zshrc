@@ -73,6 +73,11 @@ if command -v nodenv > /dev/null; then
   eval "$(nodenv init -)"
 fi
 
+# rbenv (Ruby version manager)
+if command -v rbenv > /dev/null; then
+  eval "$(rbenv init - zsh)"
+fi
+
 # ============================================================================
 # Cloud & Other Tools
 # ============================================================================
@@ -103,3 +108,4 @@ export PATH="$ANDROID_HOME/bin:$PLATFORM_TOOLS_PATH:$PATH"
 
 # Starship (Nord theme) - must be initialized last
 eval "$(starship init zsh)"
+
