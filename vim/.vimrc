@@ -115,7 +115,9 @@ nmap <leader>rn <Plug>(coc-rename)
 " オートコンプリートで Enter で確定
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 
-" Tab で次の候補、Shift-Tab で前の候補
+" Tab で次の候補、Shift-Tab で前の候補（Copilot は Ctrl+L で確定）
+let g:copilot_no_tab_map = v:true
+imap <silent><script><expr> <C-l> copilot#Accept("")
 inoremap <silent><expr> <TAB> coc#pum#visible() ? coc#pum#next(1) : "\<TAB>"
 inoremap <silent><expr> <S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<S-TAB>"
 
