@@ -60,22 +60,6 @@ function! OpenRecentFile()
 endfunction
 
 " NERDTree の設定
-" Vim 起動時に自動で NERDTree を開く
-augroup NERDTreeAutoOpen
-  autocmd!
-  " 標準入力でもファイル引数でもないときだけ起動時に開く
-  autocmd StdinReadPre * let s:std_in = 1
-  autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | wincmd p | endif
-augroup END
-
-augroup NERDTreeAutoQuit
-  autocmd!
-  " NERDTree だけが唯一のウィンドウなら Vim を終了
-  autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree()
-        \ | if tabpagenr('$') > 1 | tabclose | else | quit | endif
-        \ | endif
-augroup END
-
 let NERDTreeShowHidden=1
 
 " vim-gitgutter の設定
