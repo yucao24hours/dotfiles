@@ -2,3 +2,18 @@
 import = [
     "~/.config/alacritty/colors/nord.toml"
 ]
+
+[font]
+size = 14.0
+
+[font.normal]
+family = "Hack Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "Hack Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "Hack Nerd Font"
+style = "Italic"

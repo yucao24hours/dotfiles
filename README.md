@@ -8,7 +8,13 @@
 
 3. zprezto をインストール
 
-4. 必要なファイル／ディレクトリをシンボリックリンク
+4. Hack Nerd Font をインストール（Alacritty/tmux の矢羽表示に必須）
+
+   ```
+   brew install --cask font-hack-nerd-font
+   ```
+
+5. 必要なファイル／ディレクトリをシンボリックリンク
 
    * Vim
    ```
@@ -30,7 +36,7 @@
    ln -s path/to/dotfiles/starship/starship.toml ~/.config/starship.toml
    ```
 
-   * Alacritty (Nord テーマ)
+   * Alacritty 0.13 以降 (Nord テーマ)
    ```
    mkdir -p ~/.config/alacritty/colors
    ln -s path/to/dotfiles/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
@@ -49,11 +55,11 @@
    ln -s path/to/dotfiles/git/.gitconfig ~/.gitconfig
    ```
 
-5. vim-plug をインストール
+6. vim-plug をインストール
 
-6. Vim を起動してプラグインをインストール
+7. Vim を起動してプラグインをインストール
 
-7. その他ツールをインストール
+8. その他ツールをインストール
 
 ### Windows Terminal
 
