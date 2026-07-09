@@ -20,6 +20,7 @@ $golang\
 $python\
 $ruby\
 $elixir\
+$time\
 $character"""
 
 palette = "nord"
@@ -110,6 +111,12 @@ symbol = " "
 min_time = 500
 style = "fg:#4C566A"
 format = "[$duration]($style)"
+
+[time]
+disabled = false
+time_format = "%Y-%m-%d %H:%M"
+style = "fg:#4C566A"
+format = " [$time]($style) "
 
 [character]
 success_symbol = "[❯](fg:#A3BE8C)"
