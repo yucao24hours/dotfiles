@@ -7,3 +7,6 @@
 
 # Ignore ctags
 /tags
+
+# Machine-local shell config
+.zshrc.local

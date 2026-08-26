@@ -115,3 +115,10 @@ export PATH="$ANDROID_HOME/bin:$PLATFORM_TOOLS_PATH:$PATH"
 # Starship (Nord theme) - must be initialized last
 eval "$(starship init zsh)"
 
+# ============================================================================
+# Machine-local overrides (not tracked in git)
+# ============================================================================
+
+if [ -f "${HOME}/.zshrc.local" ]; then
+  source "${HOME}/.zshrc.local"
+fi
