@@ -15,6 +15,7 @@
 	pl = pull
 	plr = pull --rebase
 	ps = push
+  psf = push --force-with-lease
 	ad = add
 [core]
 	excludesfile = ~/.gitignore
