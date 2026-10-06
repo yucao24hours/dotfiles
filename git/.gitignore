@@ -3,8 +3,6 @@
 *~
 .DS_Store
 
-.ruby-version
-
 # Ignore ctags
 /tags
 
