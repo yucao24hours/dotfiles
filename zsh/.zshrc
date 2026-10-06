@@ -38,6 +38,11 @@ elif [[ -d /usr/local/share/zsh-completions ]]; then
   fpath=(/usr/local/share/zsh-completions $fpath)
 fi
 
+# Completions (Docker Desktop) - compinit is run by Prezto
+if [[ -d "${HOME}/.docker/completions" ]]; then
+  fpath=("${HOME}/.docker/completions" $fpath)
+fi
+
 # Word style (bash-like)
 autoload -Uz select-word-style
 select-word-style bash
@@ -109,6 +114,22 @@ export PLATFORM_TOOLS_PATH="$ANDROID_HOME/platform-tools"
 export PATH="$ANDROID_HOME/bin:$PLATFORM_TOOLS_PATH:$PATH"
 
 # ============================================================================
+# Custom Widgets
+# ============================================================================
+
+# ghq 管理下のリポジトリへ移動 (Ctrl-G)
+function fzf-ghq() {
+  local dir=$(ghq list -p | fzf --reverse)
+  if [ -n "$dir" ]; then
+    BUFFER="cd ${dir}"
+    zle accept-line
+  fi
+  zle clear-screen
+}
+zle -N fzf-ghq
+bindkey '^g' fzf-ghq
+
+# ============================================================================
 # Prompt
 # ============================================================================
 
@@ -122,15 +143,3 @@ eval "$(starship init zsh)"
 if [ -f "${HOME}/.zshrc.local" ]; then
   source "${HOME}/.zshrc.local"
 fi
-
-# ghq 管理下のリポジトリへ移動 (Ctrl-G)
-function fzf-ghq() {
-  local dir=$(ghq list -p | fzf --reverse)
-  if [ -n "$dir" ]; then
-    BUFFER="cd ${dir}"
-    zle accept-line
-  fi
-  zle clear-screen
-}
-zle -N fzf-ghq
-bindkey '^g' fzf-ghq
