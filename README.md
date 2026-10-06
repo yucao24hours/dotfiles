@@ -89,6 +89,7 @@ git clone https://github.com/nordtheme/tmux.git ~/.tmux/themes/nord-tmux
 
 ```bash
 ln -s $DOTFILES/git/.gitconfig ~/.gitconfig
+ln -s $DOTFILES/git/.gitignore ~/.gitignore   # グローバル gitignore（.gitconfig の core.excludesfile が参照）
 ```
 
 - RubyGems
