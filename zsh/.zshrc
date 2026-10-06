@@ -122,3 +122,15 @@ eval "$(starship init zsh)"
 if [ -f "${HOME}/.zshrc.local" ]; then
   source "${HOME}/.zshrc.local"
 fi
+
+# ghq 管理下のリポジトリへ移動 (Ctrl-G)
+function fzf-ghq() {
+  local dir=$(ghq list -p | fzf --reverse)
+  if [ -n "$dir" ]; then
+    BUFFER="cd ${dir}"
+    zle accept-line
+  fi
+  zle clear-screen
+}
+zle -N fzf-ghq
+bindkey '^g' fzf-ghq
