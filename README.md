@@ -156,7 +156,7 @@ gh auth login   # GitHub.com / HTTPS / Login with a web browser
 gh auth status
 ```
 
-### 11. 動作確認
+### 10. 動作確認
 
 - Alacritty を再起動し、Starship のプロンプトと矢羽（Nerd Font）が崩れず表示される
 - tmux を起動して Nord テーマが当たっている
